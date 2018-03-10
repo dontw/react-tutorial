@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hello React!</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="../libs/react/16.2.0/react.js"></script>
+    <script src="../libs/react/16.2.0/react-dom.js"></script>
+    <script src="../libs/babel-standalone/6.26.0/babel.js"></script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="text/babel">
+      class Agent extends React.Component{
+        render(){
+          return (
+            <div className="agent">
+              <img className="img" src={this.props.img}/>
+              <div className="name">{this.props.name}</div>
+              <div className="quote">{this.props.children}</div>
+            </div>
+          )
+        }
+      }
+
+      ReactDOM.render(
+      <div>
+        <Agent img="http://fakeimg.pl/350x200/?text=Hello" name="doge">
+          <Agent img="http://fakeimg.pl/350x200/?text=Hello2" name="doge2"></Agent>
+          <Agent img="http://fakeimg.pl/350x200/?text=Hello3" name="doge3"></Agent>
+        </Agent>
+        <Agent img="http://fakeimg.pl/350x200/?text=Noooo" name="cate">meow!</Agent>
+      </div>,
+      document.getElementById('app')
+      )
+     
+    </script>
+  </body>
+</html>

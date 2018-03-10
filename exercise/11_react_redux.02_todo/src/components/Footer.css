@@ -1,0 +1,12 @@
+footer a, footer span{
+  margin: 0 10px;
+  padding: 10px;
+  display: inline-block;
+  cursor: pointer;
+}
+footer a.active{
+  color: white;
+  font-weight: bold;
+  background-color: black;
+  pointer-events: none;
+}

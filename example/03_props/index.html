@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hello React!</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="../libs/react/16.2.0/react.js"></script>
+    <script src="../libs/react/16.2.0/react-dom.js"></script>
+    <script src="../libs/babel-standalone/6.26.0/babel.js"></script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="text/babel">
+      class Agent extends React.Component{
+        render() {
+          return (
+            <div className="agent">
+              <img className="img" src={this.props.img} />
+              <div className="name">{this.props.name}</div>
+              <div className="quote">{this.props.children}</div>
+            </div>
+          );
+        }
+      }
+      Agent.defaultProps = {
+        img: 'http://fakeimg.pl/200x80/27ae60/?text=default',
+        name: '姓名',
+        children: '發言',
+      };
+
+      ReactDOM.render(
+        <div>
+          <h1>我們的客服</h1>
+          <Agent img="http://fakeimg.pl/200x80/?text=milkmidi" name="Judi Anderson">我是 milkmidi, 您好!</Agent>
+          <Agent img="http://fakeimg.pl/200x80/?text=scars" name="John Stewart">去找 scars 不要找我</Agent>
+          <Agent />
+        </div>,
+        document.getElementById('app')
+      );
+    </script>
+  </body>
+</html>

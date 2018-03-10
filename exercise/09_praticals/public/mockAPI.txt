@@ -1,0 +1,9 @@
+{
+  "images":[
+    "http://fakeimg.pl/200x200/1abc9c/?text=1",
+    "http://fakeimg.pl/200x200/2ecc71/?text=2",
+    "http://fakeimg.pl/200x200/3498db/?text=3",
+    "http://fakeimg.pl/200x200/9b59b6/?text=4",
+    "http://fakeimg.pl/200x200/e74c3c/?text=5"
+  ]
+}

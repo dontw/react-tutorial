@@ -1,0 +1,10 @@
+.box {
+  margin-bottom: 40px;
+}
+.box img{
+  width: 100%;
+  height: auto;
+}
+a.fit {
+  width: 100%;
+}
