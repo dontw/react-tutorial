@@ -10,5 +10,6 @@ module.exports = {
     'react/prop-types': 0,
     'jsx-a11y/click-events-have-key-events': 0,
     'jsx-a11y/no-noninteractive-element-interactions': 0,
+    'no-console':0,
   },
 };
