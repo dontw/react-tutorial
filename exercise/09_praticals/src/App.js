@@ -9,6 +9,7 @@ import MenuBar from './components/MenuBar';
 import InfiniteScroll from './components/InfiniteScroll';
 import ImageSlider from './components/ImageSlider';
 
+
 import items from './data/repos.json';
 import imgs from './data/streamers.json';
 
@@ -17,8 +18,8 @@ import './app.css';
 const App = () => (
   <main className="app">
     <div className="container">
-      <Password />
-      {/* <RegionSelect /> */}
+      {/* <Password /> */}
+      <RegionSelect />
       {/* <ImagePreview /> */}
       {/* <FilterList items={items} /> */}
       {/* <FilterListWithColor items={items} /> */}

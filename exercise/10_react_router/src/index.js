@@ -1,5 +1,8 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { render } from 'react-snapshot';
+// import ReactDOM from 'react-dom';
 import App from './components/App';
+// 可分多隻js分部分讀取
 // import App from './components/AppCodeSplitting';
-ReactDOM.render(<App />, document.getElementById('root'));
+
+render(<App />, document.getElementById('root'));

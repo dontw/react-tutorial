@@ -11,6 +11,7 @@ import Overlay from './Overlay';
 
 const Loading = () => <div>Loading...</div>;
 const About = Loadable({
+  // 用註解方式取名
   loader: () => import(/* webpackChunkName: "About" */'./About'),
   loading: Loading,
 });

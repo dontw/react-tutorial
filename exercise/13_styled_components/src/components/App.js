@@ -12,10 +12,10 @@ const App = () => (
   <main className="app">
     <div className="container">
       <Basic />
-      <Props />
+      {/* <Props />
       <Link />
       <Attributes />
-      <Animation />
+      <Animation /> */}
     </div>
   </main>
 );
